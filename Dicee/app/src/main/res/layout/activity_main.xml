@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background">
+
+    <!-- dice logo -->
+    <ImageView
+        android:id="@+id/ivDiceeLogo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="50dp"
+        android:layout_marginBottom="50dp"
+        android:rotation="90"
+        android:src="@drawable/dicee_logo"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!-- Player 1's UI -->
+    <ImageView
+        android:id="@+id/dice1Player1"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/dice1"
+        app:layout_constraintBottom_toTopOf="@+id/btnRollPlayer1"
+        app:layout_constraintEnd_toStartOf="@+id/guideline"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ivDiceeLogo" />
+    <ImageView
+        android:id="@+id/dice2Player1"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/dice1"
+        app:layout_constraintBottom_toTopOf="@+id/btnRollPlayer1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/guideline"
+        app:layout_constraintTop_toBottomOf="@+id/ivDiceeLogo" />
+
+    <!-- Player 2's UI -->
+
+    <Button
+        android:id="@+id/btnRollPlayer1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Roll"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ivDiceeLogo"
+        app:layout_constraintVertical_bias="0.927"
+        app:layout_editor_absoluteY="647dp" />
+
+    <ImageView
+        android:id="@+id/dice1Player2"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/dice1"
+        app:layout_constraintBottom_toTopOf="@+id/ivDiceeLogo"
+        app:layout_constraintEnd_toStartOf="@+id/guideline"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnRollPlayer2" />
+
+    <ImageView
+        android:id="@+id/dice2Player2"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/dice1"
+        app:layout_constraintBottom_toTopOf="@+id/ivDiceeLogo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/guideline"
+        app:layout_constraintTop_toBottomOf="@+id/btnRollPlayer2" />
+
+    <Button
+        android:id="@+id/btnRollPlayer2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Roll"
+        android:rotation="180"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_editor_absoluteY="647dp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="200dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
